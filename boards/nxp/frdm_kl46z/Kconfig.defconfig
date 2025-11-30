@@ -1,9 +1,9 @@
-# FRDM-KL25Z board
+# FRDM-KL46Z board
 
 # Copyright (c) 2017, NXP
 # SPDX-License-Identifier: Apache-2.0
 
-if BOARD_FRDM_KL25Z
+if BOARD_FRDM_KL46Z
 
 config OSC_XTAL0_FREQ
 	default 8000000
@@ -28,4 +28,4 @@ endchoice
 
 endif # FXOS8700
 
-endif # BOARD_FRDM_KL25Z
+endif # BOARD_FRDM_KL46Z

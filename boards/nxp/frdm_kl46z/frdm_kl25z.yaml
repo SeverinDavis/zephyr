@@ -1,5 +1,5 @@
-identifier: frdm_kl25z
-name: NXP FRDM-KL25Z
+identifier: frdm_kl46z
+name: NXP FRDM-KL46Z
 type: mcu
 arch: arm
 ram: 16

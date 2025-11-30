@@ -7,7 +7,7 @@
  */
 
 
-#include <nxp/kinetis/MKL25Z128VLK4-pinctrl.h>
+#include <nxp/kinetis/MKL46Z256VLL4-pinctrl.h>
 
 &pinctrl {
 	adc0_default: adc0_default {
