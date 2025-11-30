@@ -8,6 +8,11 @@ frdm_kl46z
 
 
 cd zephyr
-west build -p always -b frdm_kl25z samples\basic\blinky
+west build -p always -b frdm_kl25z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink
 or
-west build -p always -b frdm_kl46z samples\basic\blinky
+west build -p always -b frdm_kl46z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink
+
+west flash
+
+
+Console 115200
