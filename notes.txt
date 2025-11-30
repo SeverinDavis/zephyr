@@ -2,7 +2,9 @@ activate environment:
 
 	zephyrproject\.venv\Scripts\activate.bat
 
-west boards to dump list of supported boards
+setup.bat
+
+west boards --board-root %SEVENV%
 frdm_kl25z
 frdm_kl46z
 
@@ -10,7 +12,8 @@ frdm_kl46z
 cd zephyr
 west build -p always -b frdm_kl25z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink
 or
-west build -p always -b frdm_kl46z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink
+west build -p always -b frdm_kl46z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink -DBOARD_ROOT=%SEVENV%
+
 
 west flash
 
