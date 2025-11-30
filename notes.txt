@@ -1,0 +1,13 @@
+activate environment:
+
+	zephyrproject\.venv\Scripts\activate.bat
+
+west boards to dump list of supported boards
+frdm_kl25z
+frdm_kl46z
+
+
+cd zephyr
+west build -p always -b frdm_kl25z samples\basic\blinky
+or
+west build -p always -b frdm_kl46z samples\basic\blinky
