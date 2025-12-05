@@ -1,0 +1,24 @@
+# Kinetis KL4x MCU series
+
+# Copyright 2017,2024 NXP
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_SERIES_KINETIS_KL4X
+	bool
+	select SOC_FAMILY_KINETIS
+
+config SOC_SERIES
+	default "kl4x" if SOC_SERIES_KINETIS_KL4X
+
+config SOC_MKL46Z4
+	bool
+	select SOC_SERIES_KINETIS_KL4X
+
+config SOC
+	default "mkl46z4" if SOC_MKL46Z4
+
+config SOC_PART_NUMBER_MKL46Z256VLL4
+	bool
+
+config SOC_PART_NUMBER
+	default "MKL46Z256VLL4" if SOC_PART_NUMBER_MKL46Z256VLL4
