@@ -12,7 +12,7 @@ frdm_kl46z
 cd zephyr
 west build -p always -b frdm_kl25z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink
 or
-west build -p always -b frdm_kl46z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink -DBOARD_ROOT=%SEVENV%
+west build -p always -b frdm_kl46z samples\basic\blinky -DBOARD_FLASH_RUNNER=jlink -DBOARD_ROOT=%SEVENV% -DDTS_ROOT=%SEVENV% -DSOC_ROOT=%SEVENV%
 
 
 west flash

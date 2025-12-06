@@ -1,0 +1,22 @@
+family:
+- name: kinetis
+  series:
+  - name: kl4x
+    socs:
+    - name: mkl46z4
+runners:
+  run_once:
+    '--erase':
+    - run: first
+      runners:
+      - all
+      groups:
+      - qualifiers:
+        - mkl46z4
+    '--reset':
+    - run: last
+      runners:
+      - all
+      groups:
+      - qualifiers:
+        - mkl46z4
